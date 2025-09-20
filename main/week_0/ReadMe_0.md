@@ -103,15 +103,61 @@ GTKWave is a tool to view waveforms from various file formats, such as LXT, LXT2
 
 ### Verification - GTKWave Installation 
 ![GTKWave](https://github.com/poonamkasturi/RTLtoGDS_RISC_V_VSD_IITGN/blob/main/main/week_0/assets/GTKWave.png)
+_____________________________________________________________________________________________________________________
+
+## 4. Ngspice 
+ngspice is the open source spice simulator for electric and electronic circuits.
+
+ngspice offers a wealth of device models for active, passive, analog, and digital elements. Model parameters are provided by their collections, by the semiconductor device manufacturers, or from semiconductor foundries. 
+User adds his/her circuit as a netlist, and the output is one or more graphs of currents, voltages and other electrical quantities or is saved in a data file.
+
+ngspice does not provide schematic entry. Its input is command line or file based. There are however third party interfaces available.
+
+### Ngspice Installation Steps
+After downloading the tarball from https://sourceforge.net/projects/ngspice/files/ to a local directory, unpack it using:
+      
+      $ tar -zxvf ngspice-37.tar.gz
+      $ cd ngspice-37
+      $ mkdir release
+      $ cd release
+      $ ../configure --with-x --with-readline=yes --disable-debug
+      $ make
+      $ sudo make install
+
+**NOTE:** ngspice-37 will be replaced by the version being installed
+      in the present case, I have used version **45.2**
 
 ### Verification - Ngspice Installation 
 ![Ngspice](https://github.com/poonamkasturi/RTLtoGDS_RISC_V_VSD_IITGN/blob/main/main/week_0/assets/ngspice.png)
+___________________________________________________________________________________________________________________________
+## 5. Magic VLSI
+Magic is an interactive tool for designing and editing integrated circuits using graphical commands
+
+### Magic Installation Steps
+
+      $  sudo apt-get install m4
+      $  sudo apt-get install tcsh
+      $  sudo apt-get install csh
+      $  sudo apt-get install libx11-dev
+      $  sudo apt-get install tcl-dev tk-dev
+      $  sudo apt-get install libcairo2-dev
+      $ sudo apt-get install mesa-common-dev libglu1-mesa-dev
+      $  sudo apt-get install libncurses-dev
+      git clone https://github.com/RTimothyEdwards/magic cd magic
+      ./configure make
+      make install 
 
 ### Verification - Magic VLSI Installation 
 ![Magic](https://github.com/poonamkasturi/RTLtoGDS_RISC_V_VSD_IITGN/blob/main/main/week_0/assets/magic.png)
+__________________________________________________________________________________________________________________________
+## 6. Docker
+
+### Docker Installation Steps
 
 ### Verification - Docker Installation 
 ![Docker](https://github.com/poonamkasturi/RTLtoGDS_RISC_V_VSD_IITGN/blob/main/main/week_0/assets/Docker.png)
+_________________________________________________________________________________________________________________________
+## 7. Versions of tools installed
 
 ### Versions of the tools installed
 ![Versions_Tools](https://github.com/poonamkasturi/RTLtoGDS_RISC_V_VSD_IITGN/blob/main/main/week_0/assets/versions.png)
