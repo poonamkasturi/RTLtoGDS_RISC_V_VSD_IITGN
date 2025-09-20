@@ -1,6 +1,6 @@
 # 🖥️ RISC-V Reference SoC Tapeout Program
 ## FROM DESIGN  TO  SILICON
-### 𝐅𝐫𝐨𝐦 𝐒𝐢𝐥𝐢𝐜𝐨𝐧 𝐭𝐨 𝐒𝐨𝐯𝐞𝐫𝐞𝐢𝐠𝐧𝐭𝐲 - A first-of-its-kind initiative by IIT Gandhinagar and VLSI System Design (VSD). 
+### 𝐅𝐫𝐨𝐦 𝐒𝐢𝐥𝐢𝐜𝐨𝐧 𝐭𝐨 𝐒𝐨𝐯𝐞𝐫𝐞𝐢𝐠𝐧𝐭𝐲 - A first-of-its-kind initiative by IIT Gandhinagar and VLSI System Design (VSD).
 
 
 
@@ -22,7 +22,7 @@ This repository presents my JOURNEY through Lab based experience in the digital 
 Each module demonstrates a critical stage of the VLSI frontend and backend process, integrating open-source EDA tools (Yosys, iverilog, gtkwave, ...) 
 to build, verify and layout custom digital blocks for RISC_V processor.
 
-The repository is organised by **week-by-week** tasks progress
+The repository is organised as **week-by-week** tasks progress
 
 
 
