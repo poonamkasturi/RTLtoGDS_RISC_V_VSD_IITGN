@@ -41,21 +41,47 @@ Oracle virtual machine link https://www.virtualbox.org/wiki/Downloads
 
 ------------------------------------------------------------------------------------
 
-## Day 0 - Tools Installation
-## Yosys
+# Tools Installation
+********************************
+## 1. Yosys 
+Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains. Selected features and typical applications:
 
-$ git clone https://github.com/YosysHQ/yosys.git
-$ cd yosys 
-$ sudo apt install make # (If make is not installed please install it) 
-$ sudo apt-get install build-essential clang bison flex \
-    libreadline-dev gawk tcl-dev libffi-dev git \
-    graphviz xdot pkg-config python3 libboost-system-dev \
-    libboost-python-dev libboost-filesystem-dev zlib1g-dev
-$ make 
-$ sudo make install
+   Process almost any synthesizable Verilog-2005 design
+   
+         - Converting Verilog to BLIF / EDIF/ BTOR / SMT-LIB / simple RTL Verilog / etc.
+         - Built-in formal methods for checking properties and equivalence
+         - Mapping to ASIC standard cell libraries (in Liberty File Format)
+         - Mapping to Xilinx 7-Series and Lattice iCE40 and ECP5 FPGAs
+         - Foundation and/or front-end for custom flows
+    
+### Yosys Installation Steps
+    $ git clone https://github.com/YosysHQ/yosys.git
+    $ cd yosys
+    $ sudo apt install make # (If make is not installed please install it) 
+    $ sudo apt-get install build-essential clang bison flex libreadline-dev gawk tcl-dev libffi-dev git graphviz xdot pkg-config python3 libboost-system-dev libboost-python-dev libboost-filesystem-dev zlib1g-dev
+**Yosys build depends on a Git submodule called abc, which hasn't been initialized yet. You need to run the following command before running make**
+
+    $ git submodule update --init --recursive
+    $ make 
+    $ sudo make install
 
 ### Verification - Yosys Installation 
 ![Yosys_instal](https://github.com/poonamkasturi/RTLtoGDS_RISC_V_VSD_IITGN/blob/main/main/week_0/assets/Yosys_installation.png)
+
+### Installed Package Details
+| Category | Package|Purpose |
+|------|------------------|--------|
+| **Compile and Buils Tools**| build-essential, clang |C/C++ compilers and build utilities |
+| **Parser Tools**| bison, flex |used in HDL parsers and synthesis |
+| **Shell Enhancements**| libreadline-dev, gawk |improves CLI usability and scripting |
+| **Scripting Support**| tcl-dev, libffi-dev, python3 |Required for Tool Scripting and Automation|
+| **Version control**| git |Essential for managing the project |
+| **Visualization**| graphviz, xdot |Used for Viewing synthesis Graphs |
+| **Library Managment**| pkg-config, libboost-*, zlib1g-dev |Required by many EDA tools for linking and compression |
+
+____________________________________________________________________________________________________________
+
+
 
 
 ### Verification - iverilog Installation 
