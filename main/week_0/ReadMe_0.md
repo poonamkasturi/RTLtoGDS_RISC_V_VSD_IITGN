@@ -81,11 +81,25 @@ Yosys is a framework for Verilog RTL synthesis. It currently has extensive Veril
 
 ____________________________________________________________________________________________________________
 
+## 2. ICARUS Verilog - iverilog
+Icarus Verilog is intended to compile ALL of the Verilog HDL, as described in the IEEE 1364 standard. Of course, it's not quite there yet. It also compiles a (slowly growing) subset of the SystemVerilog language, as described in the IEEE 1800 standard. For a view of the current state of Icarus Verilog, see its home page at https://steveicarus.github.io/iverilog/.
 
+Icarus Verilog is not aimed at being a simulator in the traditional sense, but a compiler that generates code employed by back-end tools.
+### iverilog Installation Steps
 
-
+      $ sudo apt-get update
+      $ sudo apt-get install iverilog 
+   
 ### Verification - iverilog Installation 
 ![iverilog](https://github.com/poonamkasturi/RTLtoGDS_RISC_V_VSD_IITGN/blob/main/main/week_0/assets/iverilog_1.png)
+
+________________________________________________________________________________________________________________________
+
+## 3. GTKWave 
+GTKWave is a tool to view waveforms from various file formats, such as LXT, LXT2, VZT, FST, GHW, and Verilog VCD/EVCD. 
+### GTKWave Installation Steps
+      $ sudo apt-get update 
+      $ sudo apt install gtkwave
 
 ### Verification - GTKWave Installation 
 ![GTKWave](https://github.com/poonamkasturi/RTLtoGDS_RISC_V_VSD_IITGN/blob/main/main/week_0/assets/GTKWave.png)
