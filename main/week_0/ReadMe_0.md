@@ -150,14 +150,4 @@ Magic is an interactive tool for designing and editing integrated circuits using
 ### Verification - Magic VLSI Installation 
 ![Magic](https://github.com/poonamkasturi/RTLtoGDS_RISC_V_VSD_IITGN/blob/main/main/week_0/assets/magic.png)
 __________________________________________________________________________________________________________________________
-## 6. Docker
 
-### Docker Installation Steps
-
-### Verification - Docker Installation 
-![Docker](https://github.com/poonamkasturi/RTLtoGDS_RISC_V_VSD_IITGN/blob/main/main/week_0/assets/Docker.png)
-_________________________________________________________________________________________________________________________
-## 7. Versions of tools installed
-
-### Versions of the tools installed
-![Versions_Tools](https://github.com/poonamkasturi/RTLtoGDS_RISC_V_VSD_IITGN/blob/main/main/week_0/assets/versions.png)
